@@ -1,0 +1,23 @@
+const a = document.querySelectorAll('a')
+a[0].style.textDecoration='underline'
+window.addEventListener('scroll',()=>{
+    if(window.scrollY>=0&&window.scrollY<1000){
+        a[0].style.textDecoration='underline'
+    }
+    else{
+        a[0].style.textDecoration='none'
+    }
+    if(window.scrollY>=1000&&window.scrollY<2000){
+        a[1].style.textDecoration='underline'
+    }
+    else{
+        a[1].style.textDecoration='none'
+    }
+    if(window.scrollY>=2000&&window.scrollY<3000){
+        a[2].style.textDecoration='underline'
+    }
+    else{
+        a[2].style.textDecoration='none'
+    }
+    console.log(window.scrollY)
+})
